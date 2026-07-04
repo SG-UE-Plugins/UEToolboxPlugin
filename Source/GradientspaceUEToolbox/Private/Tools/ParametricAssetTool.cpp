@@ -233,7 +233,7 @@ void UGSParametricAssetTool::DisconnectFromParametricObjectPropertySets()
 
 	// remove existing parameter objects
 	while (ToolPropertyObjects.Num() > NumBasePropertySets) {
-		ToolPropertyObjects.Pop(false);
+		ToolPropertyObjects.Pop(EAllowShrinking::No);
 	}
 }
 
